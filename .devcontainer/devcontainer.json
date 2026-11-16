@@ -1,5 +1,8 @@
 {
   "name": "Earth Engine Python",
   "image": "mcr.microsoft.com/devcontainers/python:3.12",
-  "postCreateCommand": "pip install --upgrade pip && pip install earthengine-api geetool vscee"
+  "features": {
+    "ghcr.io/duplocloud/devcontainers/gcloud-cli:1.0.7": {}
+  },
+  "postCreateCommand": "pip install earthengine-api geetools vscee"
 }
